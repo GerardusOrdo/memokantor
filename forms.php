@@ -25,11 +25,11 @@ if (isset($_GET['id'])) {
 		</div>
 		<form action="memo_controller.php?aksi=<?php echo $aksi."&id=".$dat->id;?>" method="POST">
 			<div class="mb-3">
-				<input type="text" name="judul" maxlength="20" class="form-control" id="judulMemo" aria-describedby="judulDesc" placeholder="Masukkan judul memo" value="<?php if($isSet){echo ($dat->judul);}?>">
-				<small id="judulDesc" class="form-text text-muted">Masukkan maksimal 20 huruf</small>
+				<input type="text" name="judul" maxlength="20" class="form-control" id="judulMemo" aria-describedby="judulDesc" placeholder="Masukkan judul memo" value="<?php if($isSet){echo ($dat->judul);}?>" required>
+				<small id="judulDesc" class="form-text text-muted">Masukkan Judul Memo</small>
 			</div>
 			<div class="mb-3">
-				<textarea id="isiMemo" name="isi" class="form-control" aria-describedby="isiDesc" placeholder="Masukkan isi memo" >
+				<textarea id="isiMemo" name="isi" class="form-control"  aria-describedby="isiDesc" placeholder="Masukkan isi memo" required>
 					<?php if($isSet){echo $dat->isi;} ?>
 				</textarea>
 				<small id="isiDesc" class="form-text text-muted">&nbsp;</small>

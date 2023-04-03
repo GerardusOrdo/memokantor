@@ -38,9 +38,6 @@ $d = $_SESSION['USERD'];
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav me-auto mb-2 mb-md-0">
 					<li class="nav-item">
-						<a class="nav-link" href="<?php echo ("user_controller.php?aksi=logout") ?>">Logout</a>
-					</li>
-					<li class="nav-item">
 						<a class="nav-link active" href="memo_controller.php?aksi=view&id=0">Tambah Memo</a>
 					</li>
 					<li class="nav-item dropdown">
@@ -58,6 +55,10 @@ $d = $_SESSION['USERD'];
 						<a class="nav-link" href="user_controller.php?aksi=view&id=0">Tambah User</a>
 					</li>	
 					<?php } ?>
+					<li class="nav-item">
+						<a class="nav-link" href="<?php echo ("user_controller.php?aksi=logout") ?>">Logout</a>
+					</li>
+
 				</ul>
 				<form class="d-flex" role="search" action="memo_controller.php?aksi=search" method="POST">
 					<input class="form-control me-2" type="search" placeholder="Cari Memo" aria-label="Search" name="key">

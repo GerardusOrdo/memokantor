@@ -34,8 +34,8 @@ $users = $conUser->getAllUser();
 								<td><?php echo $k->nama;?></td>
 								<td><a href="user_controller.php?aksi=view&id=<?php echo $k->id; ?>"><?php echo $k->username;?></a></td>
 								<td><?php if ($k->is_admin==1) {
-									echo "admin";
-								} else {echo "rakyat biasa";}?></td>
+									echo "Admin";
+								} else {echo "Pegawai";}?></td>
 								<td><?php echo $k->dt_crt;?></td>
 								<td>
 									<a href="user_controller.php?aksi=del&id=<?php echo $k->id; ?>" class="text-danger "><i class="fa fa-trash-o "></i></a>

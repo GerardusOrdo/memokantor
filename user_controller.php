@@ -104,7 +104,7 @@ if (!empty($_GET['aksi']=='del')) {
         
         # proses del
         if($m->deleteUser($d)){
-        	echo '<script>alert("Delete Data Berhasil");window.location="admin_dashboard.php"</script>';
+        	echo '<script>alert("Hapus Data Berhasil");window.location="admin_dashboard.php"</script>';
         }
 }
 

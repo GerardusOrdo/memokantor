@@ -43,7 +43,7 @@ if (!empty($_GET['aksi']=='edit')) {
         
         # proses edit
         if($m->editMemo($d)){
-        	echo "<script>alert('Edit Data Berhasil');window.location='forms.php?id=".$d->id."&aksi=edit';</script>";
+        	echo "<script>alert('Ubah Data Berhasil');window.location='forms.php?id=".$d->id."&aksi=edit';</script>";
         }
 }
 
@@ -54,7 +54,7 @@ if (!empty($_GET['aksi']=='del')) {
         
         # proses del
         if($m->deleteMemo($d)){
-        	echo '<script>alert("Delete Data Berhasil");window.location="dashboard.php"</script>';
+        	echo '<script>alert("Hapus Data Berhasil");window.location="dashboard.php"</script>';
         }
 }
 

@@ -30,16 +30,17 @@ if(!empty($_SESSION['USERD'])){
       </div>
       <div class="col-md-6 bg-white p-5">
 
-        <h3 class="pb-3">Login Aplikasi Memo Kantor</h3>
+        <h2 class="pb-3">Aplikasi Memo Kantor</h2>
+	<h5 class="pb-3">Silakan Login</h5>
         <?php if (isset($_GET['get'])) { ?>
           <?php if ($_GET['get']=="gagal"){ ?>
            <div class="alert alert-warning">
-            <strong>LOL Gagal Login!</strong> makannya inget2 passwordnya ..
+            <strong>Login Gagal</strong> Username/Password tidak terdaftar
           </div>
           <?php } ?>
           <?php if ($_GET['get']=="logout"){ ?>
            <div class="alert alert-success">
-            <strong>See ya !</strong> udah logout nih ..
+            <strong>Logout Berhasil,</strong> Terima kasih
           </div>
           <?php } ?>
         <?php } ?>
